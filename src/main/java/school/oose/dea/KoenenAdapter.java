@@ -8,6 +8,8 @@ public class KoenenAdapter implements Translator
 
     @Override
     public String translate(String word) {
+        koenen.openDutchEnglish();
+        koenen.openEnglishDutch();
         return koenen.lookUp(word);
     }
 
